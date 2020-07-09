@@ -54,8 +54,8 @@ uploadArchives {
             snapshotRepository(url: "${nexusUrl}repository/maven-staging/") {
                 authentication(userName: nexusUsername, password: nexusPassword)
             }
-            pom.groupId = ''
-            pom.artifactId = ''
+            pom.groupId = 'app'
+            pom.artifactId = 'release'
             pom.version = 'unsigned'
         }
     }
